@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Questrial", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+
+.header-announcement {
+    width: 100vw;
+    background-color: #F01737;
+    text-align: center;
+    position: fixed; 
+    top: 0;
+    left: 0; 
+    z-index: 1000; 
+    width: 100%; 
+}
+
+
+.header-announcement p {
+    color: #ffffff;
+    padding: 10px;
+    font-size: 11.2px;
+    word-spacing: 3px;
+}
+
+.header-announcement a {
+    color: white;
+}
+
+.main-navbar {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    justify-items: center;
+    background-color: transparent;
+    height: 48px;
+    padding: 0 10px;
+    position: fixed;
+    top: 31px;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+.main-navbar:hover {
+    background-color: #ffffff; 
+}
+
+.main-navbar:hover .logo svg path {
+    fill: #dd2e37;
+}
+
+.options ul {
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+.options li {
+    list-style: none;
+    padding: 2px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.main {
+    position: relative;
+}
+.main .section {
+    height: 100vh;
+    scroll-snap-align: start;
+}
+.main .section img {
+    width: 100%;        
+    height: 100%;       
+    object-fit: cover;  
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
