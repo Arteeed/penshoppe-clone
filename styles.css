@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&family=Questrial&display=swap');
 
 * {
     margin: 0;
@@ -26,8 +26,13 @@
 .header-announcement p {
     color: #ffffff;
     padding: 10px;
-    font-size: 11.2px;
-    word-spacing: 3px;
+    font-size: 0.7rem;
+    letter-spacing: 1.5px;
+    
+}
+.header-announcement span{
+    font-weight: 700;
+
 }
 
 .header-announcement a {
@@ -39,7 +44,8 @@
     grid-template-columns: 1fr 2fr 1fr;
     align-items: center;
     justify-items: center;
-    background-color: transparent;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,0.15) 0%, rgba(255,255,255,0) 100%);
     height: 48px;
     padding: 0 10px;
     position: fixed;
@@ -48,12 +54,22 @@
     width: 100%;
     z-index: 999;
 }
+.main-navbar a {
+    color: #ffffff;
+}
 .main-navbar:hover {
-    background-color: #ffffff; 
+    background: #ffffff; 
 }
 
 .main-navbar:hover .logo svg path {
     fill: #dd2e37;
+    color: #000000;
+}
+.main-navbar:hover .bar a {
+    color: #000000;
+}
+.main-navbar:hover .options a {
+    color: #000000;
 }
 
 .options ul {
@@ -86,3 +102,108 @@
 ::-webkit-scrollbar{
     display: none;
 }
+
+#section1 {
+    position: relative;
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+#section1 .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 89%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 11px 20px;
+    border-radius: 5px;
+    z-index: 10;
+}
+
+#section1 .text a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+
+}
+#section2 {
+    position: relative;
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+#section2 .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 89%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 11px 20px;
+    border-radius: 5px;
+    z-index: 10;
+}
+
+#section2 .text a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+#section3 {
+    position: relative;
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+#section3 .text {
+    display: flex;                        /* Flexbox container to align items */
+    justify-content: center;        /* Spread the anchor links apart */
+    align-items: center;                   /* Vertically center the links */
+    position: absolute;
+    top: 80%;                              /* Position 89% from the top */
+    left: 50%;                             /* Center the container horizontally */
+    transform: translateX(-50%);           /* Adjust horizontal position to exactly center */
+    width: 80%;                            /* Set width of the container */
+    z-index: 10;
+    gap: 50%;
+
+}
+
+#section3 .text a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    padding: 11px 20px;                    /* Add padding around the text */
+    border-radius: 5px;                    /* Rounded corners */
+    background-color: rgba(255, 255, 255, 0.5); /* Add background color */
+}
+
+#section3 .text a:first-child {
+    background-color: rgba(255, 255, 255, 0.7); /* Set separate background for the first link */
+}
+
+#section3 .text a:last-child {
+    background-color: rgba(255, 255, 255, 0.7); /* Set separate background for the second link */
+}
+
+
+
